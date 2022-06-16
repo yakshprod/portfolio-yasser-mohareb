@@ -23,7 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2ds36+9@#f6+@7tj+uspy_bgvw65h_73e7(#0a7i*$mmb&_r_r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+# Server Settings
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
@@ -83,10 +85,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-# import dj_database_url
-# db_from_env = dj_database_url.config(conn_max_age=500)
-# DATABASES['default'].update(db_from_env)
+# Server settings
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
@@ -128,11 +130,9 @@ STATIC_URL = 'static/'
 
 # SERVER SETTINGS
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# print("STATIC ROOOOOT IS HEREEE")
-# print(STATIC_ROOT)
 
-
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# Server Settings
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
