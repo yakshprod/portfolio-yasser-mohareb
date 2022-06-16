@@ -1,1 +1,1 @@
-web: gunicorn portfolio-yasser-mohareb
+web: gunicorn portfolio-yasser-mohareb.wsgi
