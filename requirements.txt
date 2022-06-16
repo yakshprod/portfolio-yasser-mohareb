@@ -24,7 +24,6 @@ debugpy==1.5.1
 decorator==5.1.1
 defusedxml==0.7.1
 distlib==0.3.4
-dj-database-url==0.5.0
 Django==4.0.1
 entrypoints==0.3
 executing==0.8.2
@@ -33,7 +32,6 @@ Flask==2.0.2
 fonttools==4.29.0
 gitdb==4.0.9
 GitPython==3.1.26
-gunicorn==20.1.0
 huepy==1.2.1
 idna==2.10
 image==1.5.33
@@ -82,7 +80,6 @@ pluggy==0.13.1
 prometheus-client==0.13.1
 prompt-toolkit==3.0.26
 protobuf==3.19.4
-psycopg2-binary==2.9.3
 ptyprocess==0.7.0
 pure-eval==0.2.2
 py==1.11.0
@@ -248,6 +245,9 @@ webencodings==0.5.1
 websocket-client==0.59.0
 websockets==9.1
 Werkzeug==2.0.3
-whitenoise==6.2.0
 widgetsnbextension==3.5.2
 wxPython==4.1.1
+gunicorn
+dj-database-url
+whitenoise
+psycopg2-binary
