@@ -137,6 +137,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+# END SERVER SETTINGS
 
 # LOCAL SETTINGS
 # STATIC_URL = 'static/'
