@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     #LOCAL SETTINGS
     'django.contrib.staticfiles',
-    # 'whitenoise.runserver_nostatic',
+    'whitenoise.runserver_nostatic',
     'portfolio',
     'projects',
 ]
